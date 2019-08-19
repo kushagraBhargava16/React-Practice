@@ -1,0 +1,149 @@
+1. switchNameHandler = () => {
+  console.log('Button clicked!!');
+  if(this.state.oldPersons){
+
+  }
+  this.setState({
+    persons: [
+      { name: 'K', age: 2 },
+      { name: 'n', age: 4 }
+    ],
+    oldPersons: this.state.persons
+  });
+}
+----------------------------------------------------------------------------------
+2. class App extends Component {
+  state = {
+    persons: [
+      { name: 'Kush', age: 26 },
+      { name: 'Nikhilesh', age: 28 },
+    ]
+  };
+}
+-----------------------------------------------------------------------------------
+3. const App = props => {
+  const [personsState, setPersonsState] = useState({
+    persons: [
+      { name: 'Kush', age: 26 },
+      { name: 'Nikhilesh', age: 28 },
+    ],
+    otherState: 'This is other state'
+  });
+}
+
+Note:- Class based Component is the established and more better way of creating React based component
+
+-----------------------------------------------------------------------------------
+
+4. Passing method refrence between component:-
+  1. Using bind -
+      The method refrence can be passed (with/without arrguments) like shown below. Bind will be used only when   arguments are need to be passed with the refrence as well. 
+      
+        <Person
+          name={this.state.persons[1].name}
+          age={this.state.persons[1].age}
+          click={this.switchNameHandler.bind(this, 'Kushagra')}>My Hobbies: Bakar
+        </Person>
+      
+  2. Using arrow/anonymous functions:-
+      <button onClick={() => this.switchNameHandler('Kush!!')}>Click here!</button>
+
+  Inside the receiving component, we can use the same refrence.
+    const person = (props) => {
+        return (
+            <div>
+                <p onClick={props.click} >Hi, I am {props.name} and I am {props.age} years old!</p>
+                <p>{props.children}</p>
+            </div>
+        );
+    }
+
+  Note:- Using bind is more faster can will create less issues.
+
+-----------------------------------------------------------------------------------
+
+5. Two way binding:-
+  
+  a. Creating a handler for an event that could happen in stateless component
+    
+    nameChangeHandler = (event) => {
+      console.log(event.target);
+      this.setState({
+        persons: [
+          { name: event.target.value, age: 26 },
+          { name: 'Nikhilesh', age: 28 },
+        ]
+      });
+    }
+
+    Note :- Here the name of the arg. event can be anything and it will still catch the event thrown by react when calling the handler
+  
+  b. Passing the refrence of the event handler to the stateless component
+
+    <Person
+      name={this.state.persons[0].name}
+      age={this.state.persons[0].age}
+      changed={this.nameChangeHandler}
+    > </Person>
+
+  c. Adding a input component to our stateless component and using the ref. of the event handler we got from the        statefull component
+
+    <input onChange={props.changed} value={props.name} />
+
+  Here we are binding an event handler with the changed value of the input component as well as using the binded value passed to the stateless component while being used in statefull component.
+
+-----------------------------------------------------------------------------------
+
+6. Styling:-
+    Styling can be done in two ways:-
+
+    a. Using css file and declaring the css there
+
+      Person.css ->
+      .Person{
+          width: 60%;
+          margin: 16px auto;
+          border: 1px solid #eee;
+          box-shadow: 0 2px 3px #aaa;
+          padding: 16px;
+          text-align: center;
+          text-shadow: 1px 2px 2px rgb(236, 39, 39);
+      }
+
+      Person.js ->
+      import './Person.css'
+      const person = (props) => {
+          return (
+              <div className='Person'>
+                  <p onClick={props.click}>Hi, I am {props.name} and I am {props.age} years old!</p>
+                  <input onChange={props.changed} value={props.name} />
+              </div>
+          );
+      }
+
+    b. Using inline css:-
+
+      render() {
+        const style = {
+          backgroundColor: 'white',
+          font: 'inherit',
+          border: '1px solid blue'
+        };
+        return (
+          <div className='App' style={{ 'border': '1px solid red' }>
+            <h1>Hi, I'm React App</h1>
+            <button style={style}> Click here! </button>
+          </div>
+        );
+      }
+      
+-----------------------------------------------------------------------------------
+
+7. Useful Resources & Links
+    create-react-app: https://github.com/facebookincubator/create-react-app
+    Introducing JSX: https://reactjs.org/docs/introducing-jsx.html
+    Rendering Elements: https://reactjs.org/docs/rendering-elements.html
+    Components & Props: https://reactjs.org/docs/components-and-props.html
+    Listenable Events: https://reactjs.org/docs/events.html
+    Conditional Rendering: https://reactjs.org/docs/conditional-rendering.html
+    Lists & Keys: https://reactjs.org/docs/lists-and-keys.html

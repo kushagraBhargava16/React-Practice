@@ -1,0 +1,100 @@
+{
+    "httpCode": 200,
+    "statusCode": 2000,
+    "status": true,
+    "msg": "Data found successfully",
+    "data": [
+        {
+            "_id": "5d556f11511ca300195fcd45",
+            "isActive": true,
+            "level": 3,
+            "displayOrder": 2,
+            "nodeType": "NODE",
+            "visibility": "RESTRICTED",
+            "ancestors": [
+                "5d36099a5a446b0019fb56b9",
+                "5d3761e45a446b0019fb5b6d"
+            ],
+            "tags": [],
+            "siblings": [],
+            "title": "Clone-Template-Second Child",
+            "labId": "d5463180-a263-11e9-93cc-75889095bb6d",
+            "orgId": "sial",
+            "createdBy": "0739d250-a264-11e9-9ba6-889a138914a8",
+            "updatedBy": "0739d250-a264-11e9-9ba6-889a138914a8",
+            "status": "UPCOMING",
+            "parentId": "5d3761e45a446b0019fb5b6d",
+            "clonedBy": "5d5476ec511ca300195fcbbf",
+            "createdDate": "2019-08-15T14:41:21.006Z",
+            "updatedDate": "2019-08-15T14:41:21.006Z",
+            "startDate": "2019-08-15T14:41:21.006Z",
+            "sections": [
+                {
+                    "isActive": true,
+                    "_id": "5d556f11511ca300195fcd47",
+                    "sectionId": "5d556f11511ca300195fcd47",
+                    "title": "Description",
+                    "sectionType": "ContentSection",
+                    "isVisibile": true
+                },
+                {
+                    "isActive": true,
+                    "_id": "5d556f11511ca300195fcd48",
+                    "sectionId": "5d556f11511ca300195fcd48",
+                    "title": "Subpage Materials",
+                    "sectionType": "ChildMaterialSection",
+                    "isVisibile": true
+                }
+            ],
+            "code": "AAADQJ",
+            "permission": "READ",
+            "childNodes": []
+        },
+        {
+            "_id": "5d5476ec511ca300195fcbbf",
+            "isActive": true,
+            "level": 3,
+            "displayOrder": 1,
+            "nodeType": "NODE",
+            "visibility": "RESTRICTED",
+            "ancestors": [
+                "5d36099a5a446b0019fb56b9",
+                "5d3761e45a446b0019fb5b6d"
+            ],
+            "tags": [],
+            "siblings": [],
+            "title": "Template-Second Child",
+            "labId": "d5463180-a263-11e9-93cc-75889095bb6d",
+            "orgId": "sial",
+            "createdBy": "0739d250-a264-11e9-9ba6-889a138914a8",
+            "updatedBy": "0739d250-a264-11e9-9ba6-889a138914a8",
+            "status": "UPCOMING",
+            "importedFromTemplate": "5d322a8fa654ff001996ff74",
+            "parentId": "5d3761e45a446b0019fb5b6d",
+            "createdDate": "2019-08-14T21:02:36.009Z",
+            "updatedDate": "2019-08-14T21:02:36.009Z",
+            "startDate": "2019-08-14T21:02:36.009Z",
+            "sections": [
+                {
+                    "isActive": true,
+                    "_id": "5d5476ec511ca300195fcbc1",
+                    "sectionId": "5d5476ec511ca300195fcbc1",
+                    "title": "Description",
+                    "sectionType": "ContentSection",
+                    "isVisibile": true
+                },
+                {
+                    "isActive": true,
+                    "_id": "5d5476ec511ca300195fcbc2",
+                    "sectionId": "5d5476ec511ca300195fcbc2",
+                    "title": "Subpage Materials",
+                    "sectionType": "ChildMaterialSection",
+                    "isVisibile": true
+                }
+            ],
+            "code": "AAADRJ",
+            "permission": "READ",
+            "childNodes": []
+        }
+    ]
+}
