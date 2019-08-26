@@ -1,16 +1,10 @@
 //Custom element
 import React from 'react';
-import Radium from 'radium'
-import './Person.css'
+import styles from './Person.module.css'
 
 const person = (props) => {
-    const style = {
-        '@media (min-width: 500px)': {
-            width: '450px'
-        }
-    };
     return (
-        <div className='Person' style={style}>
+        <div className={styles.Person} >
             <p onClick={props.click}>Hi, I am {props.name} and I am {props.age} years old!</p>
             <p>{props.children}</p>
             <input onChange={props.changed} value={props.name} />
@@ -19,4 +13,4 @@ const person = (props) => {
     );
 }
 
-export default Radium(person);
+export default person;
