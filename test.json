@@ -5,86 +5,41 @@
     "msg": "Data found successfully",
     "data": [
         {
-            "_id": "5d3a9fc34584f0001ba17a3f",
-            "title": "Subpages",
-            "sectionType": "ChildSection",
-            "displayOrder": 1,
+            "_id": "5d5e553945334e0018f3aa97",
             "isActive": true,
-            "isVisibile": true,
-            "parentNodeId": "5d3a9f054584f0001ba17a29",
-            "labId": "e78f9340-6758-11e9-9ed2-38022db865b7",
-            "orgId": "SIAL",
-            "createdBy": "d23142e0-a912-11e9-9f6b-e6f622a94a8b",
-            "updatedBy": "d23142e0-a912-11e9-9f6b-e6f622a94a8b",
-            "createdDate": "2019-07-26T06:37:55.951Z",
-            "updatedDate": "2019-07-26T06:38:02.629Z",
-            "childNodes": [
-                {
-                    "_id": "5d3a9fc34584f0001ba17a3e",
-                    "isActive": true,
-                    "title": "New Page",
-                    "status": "OPEN",
-                    "createdBy": "d23142e0-a912-11e9-9f6b-e6f622a94a8b",
-                    "createdDate": "2019-07-26T06:37:55.890Z",
-                    "updatedBy": "d23142e0-a912-11e9-9f6b-e6f622a94a8b",
-                    "updatedDate": "2019-07-26T06:37:55.890Z",
-                    "sections": [
-                        {
-                            "_id": "5d3a9fc34584f0001ba17a44",
-                            "title": "Description",
-                            "sectionType": "ContentSection",
-                            "displayOrder": 1,
-                            "isActive": true,
-                            "isVisibile": true,
-                            "parentNodeId": "5d3a9fc34584f0001ba17a3e",
-                            "labId": "e78f9340-6758-11e9-9ed2-38022db865b7",
-                            "orgId": "SIAL",
-                            "createdBy": "d23142e0-a912-11e9-9f6b-e6f622a94a8b",
-                            "updatedBy": "d23142e0-a912-11e9-9f6b-e6f622a94a8b",
-                            "createdDate": "2019-07-26T06:37:55.968Z",
-                            "updatedDate": "2019-07-26T06:37:55.968Z",
-                            "comments": [],
-                            "attachments": []
-                        }
-                    ],
-                    "code": "AADP1J",
-                    "permission": "ADMIN"
-                }
-            ]
-        },
-        {
-            "_id": "5d3a9f374584f0001ba17a35",
-            "title": "comments",
-            "sectionType": "CommentsSection",
+            "level": 2,
             "displayOrder": 2,
-            "isActive": true,
-            "isVisibile": true,
-            "parentNodeId": "5d3a9f054584f0001ba17a29",
+            "nodeType": "NODE",
+            "visibility": "RESTRICTED",
+            "ancestors": [
+                "5d5e550945334e0018f3aa8c"
+            ],
+            "tags": [],
+            "siblings": [],
+            "title": "Template-Test1234",
             "labId": "e78f9340-6758-11e9-9ed2-38022db865b7",
             "orgId": "SIAL",
-            "createdBy": "d23142e0-a912-11e9-9f6b-e6f622a94a8b",
-            "updatedBy": "d23142e0-a912-11e9-9f6b-e6f622a94a8b",
-            "createdDate": "2019-07-26T06:35:35.273Z",
-            "updatedDate": "2019-07-26T06:36:35.220Z",
-            "attachments": [],
-            "comments": []
-        },
-        {
-            "_id": "5d3a9f054584f0001ba17a2a",
-            "title": "Description",
-            "sectionType": "ContentSection",
-            "displayOrder": 3,
-            "isActive": true,
-            "isVisibile": true,
-            "parentNodeId": "5d3a9f054584f0001ba17a29",
-            "labId": "e78f9340-6758-11e9-9ed2-38022db865b7",
-            "orgId": "SIAL",
-            "createdBy": "d23142e0-a912-11e9-9f6b-e6f622a94a8b",
-            "updatedBy": "d23142e0-a912-11e9-9f6b-e6f622a94a8b",
-            "createdDate": "2019-07-26T06:34:45.219Z",
-            "updatedDate": "2019-07-26T06:38:52.856Z",
-            "comments": [],
-            "attachments": []
+            "createdBy": "ce82e010-6757-11e9-8cdf-f1d18d588a04",
+            "updatedBy": "c84e4d00-730b-11e9-91c0-ea23107c6f42",
+            "status": "UPCOMING",
+            "importedFromTemplate": "5d5e552345334e0018f3aa91",
+            "parentId": "5d5e550945334e0018f3aa8c",
+            "createdDate": "2019-08-22T08:41:29.741Z",
+            "updatedDate": "2019-08-22T08:41:29.741Z",
+            "startDate": "2019-08-22T08:41:29.741Z",
+            "sections": [
+                {
+                    "isActive": true,
+                    "_id": "5d5e553945334e0018f3aa99",
+                    "sectionId": "5d5e553945334e0018f3aa99",
+                    "title": "Description",
+                    "sectionType": "ContentSection",
+                    "isVisibile": true
+                }
+            ],
+            "code": "AAE2JY",
+            "permission": "READ",
+            "childNodes": []
         }
     ]
 }

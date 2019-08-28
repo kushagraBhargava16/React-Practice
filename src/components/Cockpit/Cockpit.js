@@ -4,7 +4,7 @@ import styles from './Cockpit.module.css'
 const cockpit = props => {
 
     const className = [];
-    
+
     let buttonClass = '';
     if (props.showPersons) {
         buttonClass = styles.Red;
@@ -19,7 +19,7 @@ const cockpit = props => {
 
     return (
         <div className={styles.Cockpit}>
-            <h1>Hi, I'm React App</h1>
+            <h1>{props.title}</h1>
             <p className={className.join(' ')}>Some random text</p>
             <button
                 className={buttonClass}
