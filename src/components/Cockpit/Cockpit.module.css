@@ -1,9 +1,10 @@
 .Cockpit button {
     background-color: green;
     font: inherit;
-    height: 30px;
-    border: 2px dotted yellow;
+    height: 40px;
+    border: 2px solid blue;
     color: white;
+    margin: 10px;
 }
 
 .Cockpit button:hover {
