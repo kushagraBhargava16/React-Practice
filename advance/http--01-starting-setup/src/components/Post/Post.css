@@ -1,5 +1,5 @@
 .Post {
-    width: 100px;
+    width: 250px;
     padding: 16px;
     text-align: center;
     border: 1px solid #eee;
@@ -9,8 +9,7 @@
     cursor: pointer;
 }
 
-.Post:hover,
-.Post:active {
+.Post:hover, .Post:active {
     background-color: #C0DDF5;
 }
 
